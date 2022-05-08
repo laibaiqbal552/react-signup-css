@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 const SignUpForm = ({ toggleModal }) => {
   // const initialValues = { username: "", email: "", password: "" };
   // const [formValues, setFormValues] = useState(initialValues);
