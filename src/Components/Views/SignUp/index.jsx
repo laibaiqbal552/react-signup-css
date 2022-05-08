@@ -1,18 +1,23 @@
 import React from "react";
 import SignUpForm from "./SignUpForm";
 import WelcomeSection from "../../WelcomeSection";
-import "./../../../App.css";
-import PopUp from "./PopUp";
+import OtpModal from "./OtpModal";
 
 const SignUp = () => {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function toggleModal() {
+    setIsOpen(!modalIsOpen);
+  }
+
   return (
     <div>
       <div className="inner-container">
         <WelcomeSection />
-        <SignUpForm />
+        <SignUpForm toggleModal={toggleModal} />
       </div>
       <div>
-        <PopUp />
+        <OtpModal toggleModal={toggleModal} modalIsOpen={modalIsOpen} />
       </div>
     </div>
   );

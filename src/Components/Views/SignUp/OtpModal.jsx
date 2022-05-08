@@ -1,13 +1,32 @@
 import React from "react";
 import mailbox from "./../../../images/Group 1.png";
-
-const PopUp = () => {
+import Modal from "react-modal";
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    maxWidth: "950px",
+    borderRadius: "44px",
+  },
+};
+const OtpModal = ({ toggleModal, modalIsOpen }) => {
   return (
-    <div>
+    <Modal
+      isOpen={modalIsOpen}
+      // onAfterOpen={afterOpenModal}
+      onRequestClose={toggleModal}
+      contentLabel="Example Modal"
+      style={customStyles}
+    >
       <div className="popup-box">
         <div className="inner-box">
           <div>
             <img src={mailbox} alt="" className="box-img" />
+            {/* <button onClick={toggleModal}>close</button> */}
           </div>
           <p className="verification">
             We have sent you a verification code on your entered email address.
@@ -72,8 +91,8 @@ const PopUp = () => {
           </a>
         </div>
       </div>
-    </div>
+    </Modal>
   );
 };
 
-export default PopUp;
+export default OtpModal;

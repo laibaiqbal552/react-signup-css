@@ -1,15 +1,15 @@
 import React from "react";
 
-const SignUpForm = () => {
+const SignInForm = () => {
   return (
     <div className="right-section">
       <div className="right-inner-section">
         <h1 className="signup-title">Log In</h1>
-        <form autoComplete="off">
+        <form autoComplete="off" className="w-100">
           <input
             type="text"
             placeholder="Enter  Username"
-            className="signUp-input"
+            className="signUp-input "
           />
           <br />
           <input
@@ -26,7 +26,7 @@ const SignUpForm = () => {
         <p className="if-already-sigup">
           Dont have an account?
           <a href="/signup" className="sign-btn">
-            Sign In
+            Sign Up
           </a>
         </p>
       </div>
@@ -34,4 +34,4 @@ const SignUpForm = () => {
   );
 };
 
-export default SignUpForm;
+export default SignInForm;
