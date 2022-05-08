@@ -50,6 +50,7 @@
   font-size: 20px;
   color: #2e1c55;
   margin-top: 51px;
+  text-align: center;
 }
 .sign-Up-btn {
   background: linear-gradient(91.02deg, #6d42c7 24.06%, #a097ed 115.51%);
@@ -115,6 +116,7 @@ input:focus {
   font-size: 20px;
   line-height: 20px;
   text-align: right;
+  width: 100%;
   color: rgba(46, 28, 85, 0.25);
 }
 /* popup box */
@@ -195,6 +197,9 @@ input:focus {
   .signup-title {
     font-size: 65px;
   }
+  ::placeholder {
+    font-size: 20px;
+  }
 }
 @media (max-width: 768px) {
   .signup-title {
@@ -202,5 +207,21 @@ input:focus {
   }
   .popup-box {
     padding: 20px 20px 20px 20px;
+  }
+  ::placeholder {
+    font-size: 18px;
+  }
+  .if-already-sigup {
+    font-size: 16px;
+    margin-top: 38px;
+  }
+}
+@media (max-width: 420px) {
+  ::placeholder {
+    font-size: 15px;
+  }
+  .signUp-input {
+    padding: 15px 10px;
+    margin-bottom: 15px;
   }
 }

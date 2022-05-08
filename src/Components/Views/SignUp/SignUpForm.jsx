@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const SignUpForm = ({ toggleModal }) => {
   // const initialValues = { username: "", email: "", password: "" };
   // const [formValues, setFormValues] = useState(initialValues);
@@ -76,8 +77,6 @@ const SignUpForm = ({ toggleModal }) => {
               className="signUp-input"
             />
           </div>
-
-          <p className="forgot-pass">Forgot Password</p>
         </form>
         <button
           type="submit"
@@ -87,11 +86,12 @@ const SignUpForm = ({ toggleModal }) => {
         >
           Sign Up
         </button>
+        <p className="forgot-pass">Forgot Password</p>
         <p className="if-already-sigup">
           Having an account?{" "}
-          <a href="/" className="sign-btn">
+          <Link to="/" className="sign-btn">
             Sign In
-          </a>
+          </Link>
         </p>
       </div>
     </div>
