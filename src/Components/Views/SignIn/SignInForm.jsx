@@ -22,7 +22,9 @@ const SignInForm = () => {
           <button type="button" value="Sign In" className="signUp-btn">
             Sign In
           </button>
-          <p className="forgot-pass">Forgot Password</p>
+          <a href="/" className="forgot-pass">
+            Forgot Password
+          </a>
         </form>
         <p className="if-already-sigup">
           Dont have an account?

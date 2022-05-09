@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import mailbox from "./../../../images/Group 1.png";
+import OtpInput from "react-otp-input";
 import Modal from "react-modal";
 const customStyles = {
   content: {
@@ -13,6 +14,8 @@ const customStyles = {
   },
 };
 const OtpModal = ({ toggleModal, modalIsOpen }) => {
+  const [OTP, setOTP] = useState("");
+  console.log("opt", OTP);
   return (
     <Modal
       isOpen={modalIsOpen}
@@ -20,6 +23,7 @@ const OtpModal = ({ toggleModal, modalIsOpen }) => {
       onRequestClose={toggleModal}
       contentLabel="Example Modal"
       style={customStyles}
+      ariaHideApp={false}
     >
       <div className="popup-box">
         <div className="inner-box">
@@ -32,53 +36,17 @@ const OtpModal = ({ toggleModal, modalIsOpen }) => {
             In case you can't find the code, be sure to check your spam box
           </p>
           <div id="form">
-            <input
-              type="text"
-              maxLength="1"
-              size="1"
-              min="0"
-              max="9"
-              pattern="[0-9]{1}"
-            />
-            <input
-              type="text"
-              maxLength="1"
-              size="1"
-              min="0"
-              max="9"
-              pattern="[0-9]{1}"
-            />
-            <input
-              type="text"
-              maxLength="1"
-              size="1"
-              min="0"
-              max="9"
-              pattern="[0-9]{1}"
-            />
-            <input
-              type="text"
-              maxLength="1"
-              size="1"
-              min="0"
-              max="9"
-              pattern="[0-9]{1}"
-            />
-            <input
-              type="text"
-              maxLength="1"
-              size="1"
-              min="0"
-              max="9"
-              pattern="[0-9]{1}"
-            />
-            <input
-              type="text"
-              maxLength="1"
-              size="1"
-              min="0"
-              max="9"
-              pattern="[0-9]{1}"
+            <OtpInput
+              className="otp-container"
+              value={OTP}
+              onChange={setOTP}
+              numInputs={6}
+              autoFocus
+              OTPLength={6}
+              otpType="number"
+              disabled={false}
+              secure
+              separator={<span>&nbsp;&nbsp;</span>}
             />
           </div>
           <a href="/">
