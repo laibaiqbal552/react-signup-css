@@ -125,7 +125,7 @@ input:focus {
 }
 /* popup box */
 .popup-box {
-  padding: 42px 20px 58px 20px;
+  padding: 42px 20px 30px 20px;
   text-align: center;
 }
 .inner-box {
@@ -139,6 +139,7 @@ input:focus {
   color: #2e1c55;
   margin-bottom: 38px;
   font-size: 18px;
+  font-weight: 500;
 }
 .did-not-recive {
   color: #2e1c55;
@@ -221,7 +222,7 @@ input:focus-visible {
 }
 
 @media (min-width: 1024px) {
-  .right-section {
+  /* .right-section {
     width: 50%;
     position: absolute;
     left: 50%;
@@ -229,7 +230,7 @@ input:focus-visible {
   .left-section {
     position: fixed;
     width: 50%;
-  }
+  } */
   input {
     font-size: 18px;
   }
@@ -244,6 +245,10 @@ input:focus-visible {
   ::placeholder {
     font-size: 16px;
   }
+  .ReactModal__Content .ReactModal__Content--after-open {
+    max-height: 600px !important;
+    overflow: hidden;
+  }
 }
 @media (max-width: 768px) {
   .right-section {
@@ -254,7 +259,7 @@ input:focus-visible {
     font-size: 50px;
   }
   .popup-box {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 8px 20px;
   }
   ::placeholder {
     font-size: 18px;

@@ -19,7 +19,6 @@ const OtpModal = ({ toggleModal, modalIsOpen }) => {
   return (
     <Modal
       isOpen={modalIsOpen}
-      // onAfterOpen={afterOpenModal}
       onRequestClose={toggleModal}
       contentLabel="Example Modal"
       style={customStyles}
@@ -29,7 +28,6 @@ const OtpModal = ({ toggleModal, modalIsOpen }) => {
         <div className="inner-box">
           <div>
             <img src={mailbox} alt="" className="box-img" />
-            {/* <button onClick={toggleModal}>close</button> */}
           </div>
           <p className="verification">
             We have sent you a verification code on your entered email address.
