@@ -221,10 +221,10 @@ input:focus-visible {
   background-color: #ffffff;
 }
 @media (max-width: 1440px) {
-  .right-section {
+  /* .right-section {
     padding-top: 75px;
     padding-bottom: 75px;
-  }
+  } */
 }
 @media (max-width: 1200px) {
   .right-section {
