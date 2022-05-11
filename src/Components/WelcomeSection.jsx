@@ -3,7 +3,7 @@ import Logo from "./../images/logo.png";
 import ELFS from "./../images/ELFS.png";
 const WelcomeSection = () => {
   return (
-    <div className="left-section">
+    <div className="left-section relative">
       <div>
         <div>
           <img src={Logo} alt="logo" className="logo" />
@@ -11,7 +11,7 @@ const WelcomeSection = () => {
         <h2 className="Signup-heading ">Hello Again!</h2>
         <p className="signup-subHeading">Welcome back you’ve been missed</p>
         <div>
-          <img src={ELFS} alt="logo" className="w-100 welcome-img" />
+          <img src={ELFS} alt="logo" className=" welcome-img " />
         </div>
       </div>
     </div>

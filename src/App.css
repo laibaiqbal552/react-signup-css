@@ -16,9 +16,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 50px 0 50px;
+  position: relative;
 }
 .welcome-img {
-  margin-bottom: -20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 85%;
+  margin: auto;
 }
 .logo {
   margin-bottom: 60px;
@@ -27,7 +33,7 @@
   color: #ffffff;
   font-weight: 600;
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .signup-subHeading {
   color: #a097ed;
@@ -89,7 +95,7 @@
 .signUp-input {
   border: 3px solid rgba(46, 28, 85, 0.25);
   border-radius: 8px;
-  padding: 20px;
+  padding: 10px 20px;
   width: 100%;
   margin-bottom: 30px;
   -webkit-border-radius: 8px;
@@ -105,7 +111,7 @@ input:focus {
   box-shadow: 0px 4px 26px 0px #fff6f63d;
   border-radius: 8px;
   border: 0;
-  padding: 20px;
+  padding: 10px 20px;
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
@@ -214,6 +220,12 @@ input:focus {
 input:focus-visible {
   background-color: #ffffff;
 }
+@media (max-width: 1440px) {
+  .right-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
 @media (max-width: 1200px) {
   .right-section {
     padding-top: 100px;
@@ -238,6 +250,10 @@ input:focus-visible {
 @media (max-width: 1024px) {
   .inner-container {
     grid-template-columns: 100%;
+  }
+  .welcome-img {
+    position: static;
+    margin-bottom: -30px;
   }
   .signup-title {
     font-size: 65px;
