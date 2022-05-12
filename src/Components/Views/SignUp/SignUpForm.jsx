@@ -44,7 +44,7 @@ const SignUpForm = ({ toggleModal }) => {
   //   return errors;
   // };
   return (
-    <div className="right-section">
+    <div className="signup right-section">
       <div className="right-inner-section">
         <h1 className="signup-title">Sign Up</h1>
         <form autoComplete="off" className="w-100">

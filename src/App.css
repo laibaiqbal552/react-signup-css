@@ -23,7 +23,16 @@
   bottom: 0;
   left: 0;
   right: 0;
+  width: 66%;
+  margin: auto;
+}
+.welcome-img2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 85%;
+  display: flex;
   margin: auto;
 }
 .logo {
@@ -204,9 +213,10 @@ input:focus {
   color: black !important;
   width: 100% !important;
 }
-.right-section {
-  padding-top: 175px;
-  padding-bottom: 175px;
+
+.sign-in.right-section {
+  padding-top: 225px;
+  padding-bottom: 225px;
 }
 .otp-container:last-child input {
   margin-right: 8px;
@@ -220,10 +230,36 @@ input:focus {
 input:focus-visible {
   background-color: #ffffff;
 }
-@media (max-width: 1200px) {
-  .right-section {
+.signup.right-section {
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+@media (max-width: 1700px) {
+  .signup.right-section {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .welcome-img {
+    width: 75%;
+  }
+  .sign-in.right-section {
+    padding-top: 162px;
+    padding-bottom: 162px;
+  }
+}
+@media (max-width: 1600px) {
+  .signup.right-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 1440px) {
+  .signup.right-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .welcome-img {
+    width: 85%;
   }
 }
 
@@ -242,6 +278,12 @@ input:focus-visible {
   }
 }
 @media (max-width: 1024px) {
+  .sign-in.right-section,
+  .signup.right-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
   .inner-container {
     grid-template-columns: 100%;
   }
@@ -259,11 +301,14 @@ input:focus-visible {
     max-height: 600px !important;
     overflow: hidden;
   }
+  .welcome-img {
+    margin-bottom: 0;
+    display: flex;
+  }
 }
 @media (max-width: 768px) {
-  .right-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  .logo {
+    margin-bottom: 20px;
   }
   .signup-title {
     font-size: 50px;
@@ -295,9 +340,5 @@ input:focus-visible {
   .signUp-input {
     padding: 15px 10px;
     margin-bottom: 15px;
-  }
-  .right-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
   }
 }

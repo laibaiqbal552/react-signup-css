@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SignInForm = () => {
   return (
-    <div className="right-section">
+    <div className="sign-in right-section">
       <div className="right-inner-section">
         <h1 className="signup-title">Log In</h1>
         <form autoComplete="off" className="w-100">
