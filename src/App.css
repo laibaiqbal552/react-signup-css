@@ -262,6 +262,22 @@ input:focus-visible {
     width: 85%;
   }
 }
+@media (max-width: 1280px) {
+  .signUp-input {
+    padding: 14px 20px;
+    font-size: 18px;
+  }
+  .signUp-btn {
+    padding: 14px 20px;
+    font-size: 18px;
+  }
+  .signup-title {
+    font-size: 60px;
+  }
+  ::placeholder {
+    font-size: 18px;
+  }
+}
 
 @media (min-width: 1024px) {
   /* .right-section {
